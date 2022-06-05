@@ -41,101 +41,107 @@
         </div>
 
 
-        <form class="feedback-form addLatercollapse" id="addLatercollapseExample">
-            <div class="form-group row">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Имя">
+        <form class="form-group feedback-form addLatercollapse" id="addLatercollapseExample" action="index.php"
+            method="get">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <label for="userName" class="d-none"></label>
+                    <input type="text" name="userName" id="userName" class="form-control" placeholder="Имя" required>
                 </div>
-                <div class="col">
-                    <input type="number" class="form-control" placeholder="Возраст">
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="tel">Mobile</label>
-                    <input type="password" class="form-control" id="tel" placeholder="Номер телефона в формате: +...">
+                <div class="col-md-6 mb-4">
+                    <label for="userAge" class="d-none"></label>
+                    <input type="number" name="userAge" id="userAge" class="form-control" placeholder="Возраст"
+                        required>
                 </div>
             </div>
+            <!-- </div> -->
 
-            <div class="form-group">
-                <div class="row">
-                    <legend class="col-form-label col pt-0">Откуда вы впервые узнали о сервисе</legend>
+            <!-- <div class="form-group row"> -->
+            <div class="row">
+                <div class="form-group col-md-6 mb-4">
+                    <label for="userEmail">Email</label>
+                    <input type="email" class="form-control" name="userEmail" id="userEmail" placeholder="" required>
                 </div>
-                <div class="row">
-                    <div class="col d-flex justify-content-around">
-                        <div class="form-check-inline">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                value="option1" checked>
-                            <label class="form-check-label" for="gridRadios1">
-                                Реклама в соц. сетях
-                            </label>
-                        </div>
-                        <div class="form-check-inline">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                value="option2">
-                            <label class="form-check-label" for="gridRadios2">
-                                От знакомых
-                            </label>
-                        </div>
-                        <div class="form-check-inline">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                value="option2">
-                            <label class="form-check-label" for="gridRadios2">
-                                Рекламная рассылка по email
-                            </label>
-                        </div>
-                    </div>
+                <div class="form-group col-md-6 mb-4">
+                    <label for="userTel">Mobile</label>
+                    <input type="tel" class="form-control" name="userTel" id="userTel"
+                        placeholder="Номер телефона в формате: +...">
                 </div>
             </div>
+            <!-- </div> -->
 
-            <div class="form-group">
-                <div class="row">
-                    <legend class="col-form-label col pt-0">Какими видами сервиса вы пользуетесь</legend>
-                </div>
-                <div class="row">
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                            <label class="form-check-label" for="gridCheck1">
-                                Через сайт на компьютере
-                            </label>
-                        </div>
+            <!-- <div class="form-group"> -->
+            <div class="row col-md-6 mb-2">
+                <legend class="col-form-label col pt-0">Откуда вы впервые узнали о сервисе</legend>
+            </div>
+            <div class="row col-12 mb-4">
+                <div class="col d-flex justify-content-around">
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            Реклама в соц. сетях
+                        </label>
                     </div>
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                            <label class="form-check-label" for="gridCheck1">
-                                Через сайт на телефоне / планшете
-                            </label>
-                        </div>
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                            От знакомых
+                        </label>
                     </div>
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                            <label class="form-check-label" for="gridCheck1">
-                                В мобильном приложении на телефоне / планшете
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                            <label class="form-check-label" for="gridCheck1">
-                                Через виджет на сайте интернет магазина
-                            </label>
-                        </div>
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                        <label class="form-check-label" for="gridRadios3">
+                            Рекламная рассылка по email
+                        </label>
                     </div>
                 </div>
             </div>
+            <!-- </div> -->
 
-            <div class="form-group">
-                <label for="exampleFormControlSelect1">Какую оценку нам поставите?</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+            <!-- <div class="form-group"> -->
+            <div class="row mb-2">
+                <legend class="col-form-label col pt-0">Какими видами сервиса вы пользуетесь</legend>
+            </div>
+            <div class="row mb-4">
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1" name="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                            Через сайт на компьютере
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck2" name="gridCheck2">
+                        <label class="form-check-label" for="gridCheck2">
+                            Через сайт на телефоне / планшете
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck3" name="gridCheck3">
+                        <label class="form-check-label" for="gridCheck3">
+                            В мобильном приложении на телефоне / планшете
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck4" name="gridCheck4">
+                        <label class="form-check-label" for="gridCheck4">
+                            Через виджет на сайте интернет магазина
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+
+            <div class="row col-12 mb-4">
+                <label for="evaluateRating">Какую оценку нам поставите?</label>
+                <select class="form-control" id="evaluateRating" name="evaluateRating">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -144,29 +150,29 @@
                 </select>
             </div>
 
-            <div class="form-group">
+            <div class="row col-12 mb-4">
                 <div class="input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text">Что вы купили с помощью сервиса?</span>
                     </div>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                    <textarea class="form-control" aria-label="With textarea" name="userFeedback"></textarea>
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="row col-12 mb-4">
                 <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="customFileLang" lang="ru">
-                    <label class="custom-file-label" for="customFileLang">Загрузите фотографии</label>
+                    <label class="custom-file-label" for="userFileUpload">Загрузите фотографии</label>
+                    <input type="file" class="custom-file-input" id="userFileUpload" lang="ru" name="userUpload">
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="row col-12 mb-4">
                 <input type="reset" class="form-control" placeholder="Сбросить">
             </div>
 
-            <div class="form-group">
+            <div class="row col-12 mb-2">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
                     <label class="form-check-label" for="gridCheck">
                         Согласие на <a href="#" class="personalData">обработку персональных данных</a>
                     </label>
@@ -174,38 +180,7 @@
             </div>
 
 
-            <button type="submit" class="btn btn-primary btn-lg">Отправить</button>
-
-            <!-- 
-            <div class="form-group">
-                <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="form-group">
-                <label for="inputAddress2">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
-                </div>
-            </div> -->
-
-
-
-
+            <input type="submit" class="btn btn-primary btn-lg" value="Отправить">
         </form>
     </div>
 
