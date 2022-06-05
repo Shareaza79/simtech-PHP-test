@@ -5,6 +5,6 @@ print_r($_REQUEST);
 echo '</pre>';
 echo 'php website';
 
-require 'index.html';
+require 'feedbackPage.html';
 
 exit;
